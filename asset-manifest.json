@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NarrativeAnalysis/static/css/main.685ecbc0.css",
+    "main.js": "/NarrativeAnalysis/static/js/main.95c6fe09.js",
+    "static/js/787.545aecf5.chunk.js": "/NarrativeAnalysis/static/js/787.545aecf5.chunk.js",
+    "index.html": "/NarrativeAnalysis/index.html",
+    "main.685ecbc0.css.map": "/NarrativeAnalysis/static/css/main.685ecbc0.css.map",
+    "main.95c6fe09.js.map": "/NarrativeAnalysis/static/js/main.95c6fe09.js.map",
+    "787.545aecf5.chunk.js.map": "/NarrativeAnalysis/static/js/787.545aecf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.685ecbc0.css",
+    "static/js/main.95c6fe09.js"
+  ]
+}
