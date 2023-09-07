@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import './App.css';
 import Linechart from './components/Linechart';
 import {UserData} from './Data'
@@ -6,6 +6,12 @@ import Piechart from './components/Piechart';
 import LineChart from './components/Emotion';
 
 function App() {
+  
+  // changing document name
+
+  useEffect(() => {
+    document.title = 'Narrative Analysis'; 
+  }, []);
 
   //Data is defined here for all graphs
 
@@ -15,12 +21,9 @@ function App() {
       label: "Number of Narratives",
       data:UserData.map((data)=>data.narratives),
       yAxisID:'y',
+      borderColor: "#62CDFF",
+      borderWidth: 3,
 
-    },
-   {
-    label: "Number of Videos",
-    data:UserData.map((data)=>data.video_count),
-    yAxisID:'y1',
     },
 ],
   });
@@ -37,32 +40,50 @@ function App() {
       label: "Joy",
       data:UserData.map((data)=>data.joy),
       yAxisID:'y',
+      borderColor: "#FF5733",
+      borderWidth: 3,
+      backgroundColor: "#FF5733"
 
     },
     {
       label: "Anger",
       data:UserData.map((data)=>data.anger),
       yAxisID:'y',
+      borderColor: "#E3735E",
+      borderWidth: 3,
+      backgroundColor: "#E3735E"
     },
     {
       label: "Disgust",
       data:UserData.map((data)=>data.disgust),
       yAxisID:'y',
+      borderColor: "#8db051",
+      borderWidth: 3,
+      backgroundColor: "#8db051"
     },
     {
       label: "Fear",
       data:UserData.map((data)=>data.fear),
       yAxisID:'y',
+      borderColor: "#6E260E",
+      borderWidth: 3,
+      backgroundColor: "#6E260E"
     },
     {
       label: "Sadness",
       data:UserData.map((data)=>data.sadness),
       yAxisID:'y',
+      borderColor: "#A9A9A9",
+      borderWidth: 3,
+      backgroundColor: "#A9A9A9"
     },
     {
       label: "Surprise",
       data:UserData.map((data)=>data.surprise),
       yAxisID:'y',
+      borderColor: "#62CDFF",
+      borderWidth: 3,
+      backgroundColor: "#62CDFF"
     },
   ], 
 });
@@ -91,13 +112,17 @@ function App() {
   };
   return (
     <div style={{textAlign:"center"}}> 
-      <h2>YouTube Data Analysis:South China Dispute </h2>
-    <div className="App">
-      <div style={{width:600}}>
-        <h3>Posting Frequency of Video and Narratives</h3>
+      <h2>YouTube Data Analysis:South China Dispute </h2><br/>
+
+      <div style={{textAlign:"center"}}>
+      <h3>Narratives Frequency</h3>
+      <div className='postingfrequency-chart'>  
       <Linechart chartData={userData}/>
       </div>
-      <div style={{width:300}}>
+      </div><br/>
+    <div className="App">
+      
+      <div style={{width:350}}>
         <h3>Sentiment Analysis</h3>
         <h4
             style={{ textAlign: 'Right', cursor: 'pointer' }}
@@ -111,18 +136,13 @@ function App() {
             <Piechart chartData={pieData} />
           )}
       </div>
-      <div style={{textAlign:"center",width:600}}>
+      <div style={{textAlign:"center",width:800}}>
       <h3>Emotion Analysis</h3>
       <LineChart chartData={emotionData}/>
       </div>
     </div>
     
     </div>
-
-
-
-
-
   );
 }
 export default App;

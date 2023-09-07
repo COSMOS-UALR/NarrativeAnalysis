@@ -4,4 +4,12 @@
   justify-content: space-around;
   align-items: center;
 }
+.postingfrequency-chart{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
 

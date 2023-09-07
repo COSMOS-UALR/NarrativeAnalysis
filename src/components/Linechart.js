@@ -6,22 +6,40 @@ function Linechart({chartData}){
     const options = {
         scales: {
             x: {
-                display: true, // Display the X axis
+                display: true, 
                 grid: {
-                  display: false, // Hide the X axis gridlines
+                  display: false, 
+                },
+                ticks: {
+                  font: {
+                    size: 13,       
+                    family: 'sans-serif', 
+                  },
                 },
               },
           y: {
-            position: 'left', // Position the first Y axis on the left side
+            position: 'left', 
             grid: {
-                display: false, // Hide the Y axis gridlines
+                display: false, 
               },
             title: {
               display: true,
               text: 'Number of Narratives',
+              font:{
+                size:20,
+                weight: 'bold',
+                family: 'sans-serif',
+              }
+              
+            },
+            ticks: {
+              font: {
+                size: 13,       
+                family: 'sans-serif', 
+              },
             },
           },
-         y1: {
+         /*y1: {
             position: 'right', // Position the second Y axis on the right side
             grid: {
                 display: false, // Hide the Y axis gridlines
@@ -30,8 +48,21 @@ function Linechart({chartData}){
               display: true,
               text: 'Number of Videos',
             },
+          },*/
+        },
+        plugins: {
+          legend: {
+            display: false,
+           },
+        },
+        
+        elements: {
+          point: {
+            radius: 1,        
+            pointStyle: 'circle' 
           },
         },
+        
       };
    
     return <Line data={chartData} options={options}/>;

@@ -10,6 +10,12 @@ function emotionaanalysis({chartData}){
                 grid: {
                   display: false, // Hide the X axis gridlines
                 },
+                ticks: {
+                  font: {
+                    size: 13,       
+                    family: 'sans-serif', 
+                  },
+                },
               },
           y: {
             position: 'left', // Position the first Y axis on the left side
@@ -20,6 +26,24 @@ function emotionaanalysis({chartData}){
               display: true,
               //text: 'Emotion Proportion',
             },
+            ticks: {
+              font: {
+                size: 13,       
+                family: 'sans-serif', 
+              },
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position:'right'
+           },
+        },
+        elements: {
+          point: {
+            radius: 1,        
+            pointStyle: 'circle' 
           },
         },
       };
