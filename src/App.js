@@ -112,7 +112,7 @@ function App() {
   };
   return (
     <div style={{textAlign:"center"}}> 
-      <h2>YouTube Data Analysis:South China Dispute </h2><br/>
+      <h2>YouTube Data Analysis: South China Dispute </h2><br/>
 
       <div style={{textAlign:"center"}}>
       <h3>Narratives Frequency</h3>
