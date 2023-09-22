@@ -9,8 +9,8 @@ export const UserData =[
         joy:0.099,
         sadness:0.185,
         surprise:0.028,
-        Negative:108,
-        Positive:39
+        negative:108,
+        positive:39
     },
     {
         month:'Feb',
@@ -22,8 +22,8 @@ export const UserData =[
         joy:0.089,
         sadness:0.137,
         surprise:0.021,
-        Negative:196,
-        Positive:53
+        negative:196,
+        positive:53
     },
     {
         month:'Mar',
@@ -35,8 +35,8 @@ export const UserData =[
         joy:0.083,
         sadness:0.140,
         surprise:0.014,
-        Negative:289,
-        Positive:80
+        negative:289,
+        positive:80
     },
     {
         month:'Apr',
@@ -48,8 +48,8 @@ export const UserData =[
         joy:0.102,
         sadness:0.152,
         surprise:0.010,
-        Negative:173,
-        Positive:56
+        negative:173,
+        positive:56
     },
     {
         month:'May',
@@ -61,8 +61,8 @@ export const UserData =[
         joy:0.193,
         sadness:0.161,
         surprise:0.026,
-        Negative:259,
-        Positive:136
+        negative:259,
+        positive:136
     },
     {
         month:'Jun',
@@ -74,8 +74,8 @@ export const UserData =[
         joy:0.242,
         sadness:0.142,
         surprise:0.026,
-        Negative:178,
-        Positive:120
+        negative:178,
+        positive:120
     },
     {
         month:'Jul',
@@ -87,8 +87,8 @@ export const UserData =[
         joy:0.163,
         sadness:0.168,
         surprise:0.037,
-        Negative:93,
-        Positive:94
+        negative:93,
+        positive:94
     },
     {
         month:'Aug',
@@ -100,8 +100,8 @@ export const UserData =[
         joy:0.113,
         sadness:0.164,
         surprise:0.028,
-        Negative:91,
-        Positive:57
+        negative:91,
+        positive:57
     },
     {
         month:'Sept',
@@ -113,8 +113,8 @@ export const UserData =[
         joy:0.219,
         sadness:0.169,
         surprise:0.037,
-        Negative:109,
-        Positive:113
+        negative:109,
+        positive:113
     },
     {
         month:'Oct',
@@ -126,8 +126,8 @@ export const UserData =[
         joy:0.123,
         sadness:0.191,
         surprise:0.033,
-        Negative:493,
-        Positive:205
+        negative:493,
+        positive:205
     },
     {
         month:'Nov',
@@ -139,8 +139,8 @@ export const UserData =[
         joy:0.184,
         sadness:0.180,
         surprise:0.030,
-        Negative:642,
-        Positive:367
+        negative:642,
+        positive:367
 
     },
     {
@@ -153,7 +153,7 @@ export const UserData =[
         joy:0.105,
         sadness:0.146,
         surprise:0.021,
-        Negative:721,
-        Positive:167
+        negative:721,
+        positive:167
     },
 ];

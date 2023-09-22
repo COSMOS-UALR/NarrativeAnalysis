@@ -1,15 +1,21 @@
 import { useState,useEffect } from 'react';
 import './App.css';
-import Linechart from './components/Linechart';
+import Linechart from './components/Narrative Frequency';
 import {UserData} from './Data'
-import Piechart from './components/Piechart';
+import Piechart from './components/SentimentPieChart';
 import LineChart from './components/Emotion';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './Navigation Bar/sidebar';
+import Methodology from './components/Methodology';
+import Home from './components/Landing';
+import SentimentLinechart from './components/SentimentLinechart';
 
 function App() {
-  
+
+  //commented lines of code belong to chart.js 
   // changing document name
 
-  useEffect(() => {
+  /*useEffect(() => {
     document.title = 'Narrative Analysis'; 
   }, []);
 
@@ -111,7 +117,20 @@ function App() {
     setShowLineChart(!showLineChart);
   };
   return (
-    <div style={{textAlign:"center"}}> 
+    <>
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path='/'  element={<Home/>} />
+        <Route path='/methodology' element={<Methodology/>} />
+
+
+      </Routes>
+
+
+
+    </Router>
+   <div style={{textAlign:"center"}}> 
       <h2>YouTube Data Analysis: South China Dispute </h2><br/>
 
       <div style={{textAlign:"center"}}>
@@ -143,6 +162,30 @@ function App() {
     </div>
     
     </div>
-  );
+    </>
+  );*/
+  useEffect(() => {
+    document.title = 'Narrative Analysis'; 
+  }, []);
+
+  return(
+    <>
+    
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path='NarrativeAnalysis'  element={<Home/>} />
+        <Route path='/NarrativeAnalysis/methodology' element={<Methodology/>} />
+        <Route path='/NarrativeAnalysis/analysis/sentiment' element={<SentimentLinechart/>} />
+
+
+      </Routes>
+
+
+
+    </Router>
+    
+    </>
+  )
 }
 export default App;
